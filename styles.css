@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+/* Game Description - separate from the box */
+#game-description {
+    font-size: 20px;
+    color: whitesmoke; /* Light purple */
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Game Container */
+.container {
+    background: rgba(51, 0, 51, 0.8); /* Darker purple with transparency */
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.3); /* Pink glow */
+}
+
+/* Question Box */
+#question-container {
+    background: rgba(74, 0, 74, 0.6); /* Deep purple with opacity */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#question {
+    font-size: 18px;
+    color: #e0aaff; /* Light purple */
+}
+
+/* Sortable List */
+#sortable-list {
+    list-style: none;
+    padding: 0;
+}
+
+#sortable-list li {
+    background: #4a004a; /* Deep purple */
+    color: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: grab;
+    font-size: 16px;
+    box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.4);
+    transition: 0.2s;
+}
+
+#sortable-list li:hover {
+    background: #660066; /* Brighter purple */
+    box-shadow: 0px 0px 12px rgba(255, 105, 180, 0.6);
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.5);
+}
+
+#check-answer {
+    background: #ff66b2; /* Neon pink */
+    color: #190019;
+}
+
+#check-answer:hover {
+    background: #e60073; /* Darker pink */
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.8);
+}
+
+#next-question {
+    background: #cc00cc; /* Purple */
+    color: #ffffff;
+    display: none;
+}
+
+#next-question:hover {
+    background: #990099;
+    box-shadow: 0px 0px 15px rgba(204, 0, 204, 0.8);
+}
+
+/* Result Text */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}

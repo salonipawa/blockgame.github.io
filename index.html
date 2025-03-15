@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Code Blocks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+<body>
+
+    <!-- Title & Description (Now OUTSIDE the box) -->
+    <h1>Sortable Code Blocks</h1>
+    <p id="game-description">Drag and arrange the blocks in the correct order form a working code snippet!</p>
+
+    <!-- Game Box -->
+    <div class="container">
+        <div id="question-container">
+            <p id="question"></p>
+        </div>
+        <ul id="sortable-list"></ul>
+        <button id="check-answer">Check Answer</button>
+        <button id="next-question" style="display: none">Next Question</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
